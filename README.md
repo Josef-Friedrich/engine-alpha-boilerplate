@@ -30,30 +30,6 @@ public class HelloWorld extends Scene
 }
 ```
 
-## Periodische Aufgaben
-
-```java
-import java.util.TimerTask;
-import java.util.Timer;
-
-public class PeriodicTask
-{
-    public static void main(String[] args)
-    {
-        Timer timer = new Timer();
-        TimerTask task = new TimerTask()
-        {
-            @Override
-            public void run()
-            {
-                System.out.println("Do something!");
-            }
-        };
-        timer.scheduleAtFixedRate(task, 0, 1000);
-    }
-}
-```
-
 # Tastatureingaben
 
 ```java
